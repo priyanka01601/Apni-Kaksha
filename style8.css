@@ -1,0 +1,184 @@
+/**, *:before, *:after {
+box-sizing: border-box;
+}
+
+body {
+font-family: "Montserrat", sans-serif;
+margin: 0;
+display: grid;
+font-size: 15px;
+color: red;
+}*/
+.footer header p {
+padding: 75px;
+text-align: center;
+color: black;
+text-transform: uppercase;
+font-size: 65px;
+font-weight: 700;
+}
+.footer {
+display: flex;
+flex-flow: row wrap;
+padding: 20px;
+color: white;
+background-color: #2d2d2d;
+width: 100%;
+}
+
+.footer > * {
+flex:  1 100%;
+color: white;
+}
+
+.footer .l-footer {
+margin-right:3px;
+margin-bottom: 2em;
+padding-left: 20px;
+color: white;
+}
+
+.footer h2 {
+font-weight: 400;
+font-size: 15px;
+color: white;
+}
+
+.footer ul {
+list-style: none;
+padding-left: 0;
+color: white;;
+}
+
+.footer li {
+line-height: 2em;
+color: white;
+}
+ 
+.footer a {
+text-decoration: none;
+color: white;
+
+}
+
+.footer .r-footer {
+display: flex;
+flex-flow: row wrap;
+color: white;
+}
+
+ .r-footer > * {
+flex: 1 50%;
+margin-right: 1.25em;
+color: white;
+
+}
+
+.footer .box a {
+
+color: white;
+}
+
+.footer .h-box {
+column-count: 2;
+column-gap: 1.25em;
+}
+
+.footer .b-footer {
+text-align: center;
+color:white;
+padding-top: 50px;
+}
+
+.footer .l-footer p {
+padding-right: 20%;
+color: white;
+}   
+
+@media screen and (min-width: 600px) {
+.r-footer > * {.footer 
+flex: 1;
+color: white;
+margin-left: 60px;
+}
+
+.footer .features {
+flex-grow: 2;
+color: white;
+padding-left: 50px;
+}
+.footer .box-h-box{
+  margin-left: 50px;
+margin-left:0px;
+}
+.footer .box1-h-box1{
+  margin-left: 50px;
+margin-left:-20px;
+margin-top: 8%;
+}
+
+.footer .l-footer {
+flex: 1 0px;
+color: white;
+margin-right: 2px;
+}
+.footer .social-icons li a i{
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #dfecf7;
+    border-radius: 50%;
+  }
+  .footer .social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+      padding-left: -10px;
+  }
+
+  .footer .horizontal-list li{
+    display: inline;
+    margin: 30px -10px 1px 3px;
+
+  }
+  .footer .horizontal-list{
+    list-style: none;
+    padding-left: -10px;
+    margin: 0px; 
+  }
+  .footer .Input[placeholder]{
+    height:40px;
+    padding: 5%;
+  }
+  .footer .submit{
+      width: 70%;
+      background-color:#359fb0;
+      padding: 4px;
+      outline: none;
+      border: 1px solid #fff;
+      color:white; 
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 30px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-top: 5%;
+      margin-left: 17%;
+      border:2px solid rgb(190, 190, 190);
+      color: white;
+     }
+     .footer .submit:hover {
+  /*background-color: #555;*/
+  background: #2b3532;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+}
+.r-footer {
+flex: 2 0px;
+color: white;
+margin-right: 220px;
+margin-left: -45px;
+}
+}

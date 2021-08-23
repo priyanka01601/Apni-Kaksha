@@ -1,0 +1,105 @@
+body
+{
+    background-color: white;
+    color: white;
+     font-family: Arial, Helvetica, sans-serif;
+    margin-left: : 2px;
+}
+.profile-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  width: 400px;
+  margin: auto;
+  background-color:#2d2d2d;
+  text-align:justify-all; 
+}
+.image-container{
+  position: relative;
+  width: 100%;
+  /*height:100%;*/
+  /*background-size:contain;*/
+}
+.heading{
+  margin-left: 10px;
+}
+.main-container{
+  padding-bottom: 10px;
+  margin-left: 5px;
+}
+.main-container ul li {
+  display: flex;
+  margin-bottom: -13px;
+  align-items: left;
+}
+ .main-container ul li .icon_bio {
+  width: 35px;
+  height: 38px;
+  color: white;
+  /*border-radius: 90%;*/
+  margin-right: 5px;
+  font-size: 15px;
+  position: relative;
+}
+  .main-container ul li .data {
+  color: white;
+  margin-top: 14px;
+}
+
+
+.title {
+  left:15px;
+  bottom:0px;
+  position: absolute;
+}
+
+ .but{
+  padding-top: 3px;
+  width: 38%;
+  height: 40px;
+  margin-top: 25px;
+  background-color: #359fb0;
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+ .view
+{
+  padding-top: 3px;
+  width: 50%;
+  height: 40px;
+  margin-top: -5px;
+  background-color: #359fb0;
+  color: white;
+  margin-left: 95px;
+  margin-bottom: 1px;
+}
+
+
+
+button:hover{
+   
+  /*background-color: #555;*/
+  background: #2b3532;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+
+}
+/*ul li .icon_bio {
+  width: 35px;
+  height: 38px;
+  color: white;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 15px;
+  position: relative;
+}*/
+
+/*ul li .data {
+  color: white;
+  margin-top: 14px;
+}*/
+/*ul li .mail {
+  color: white;
+  margin-bottom: 18px;
+}*/

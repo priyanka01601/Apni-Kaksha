@@ -1,0 +1,39 @@
+
+
+<section class="how section">
+      <div class="container">
+        <div class="sectionheader">
+          <h2 style="font-size: 39px;">HOW IT WORKS</h2>
+        </div>
+        <div class="howitems" style="margin-left: -127px;">
+          <div class="howitem" style="margin-left: 90px;"><!-- <svg class="icon iconhowsearch">
+              <use xlink:href="/images/how.svg#howsearch"></use>
+            </svg> -->
+            <img style="height:135px; width: 160px;" src="Howitworks_search.png">
+            <h3>Search </h3><h3 style="margin-top: -15px;">tutors</h3>
+            <p>Search tutors by their name or skill you want to learn</p>
+          </div>
+          <div class="howitem"><!-- <svg class="icon iconrating">
+              <use xlink:href="/images/how.svg#rating"></use>
+            </svg> -->
+            <img src="exper..PNG">
+            <h3>View tutors' experience</h3>
+            <p>View tutors' skills, feedback and work experience</p>
+          </div>
+          <div class="howitem"><!-- <svg class="icon iconteam">
+              <use xlink:href="/images/how.svg#team"></use>
+            </svg> -->
+            <img src="contact.PNG">
+            <h3>Contact as many tutors as you like</h3>
+            <p>Contact as many tutors as you would like through our messaging system</p>
+          </div>
+          <div class="howitem"><!-- <svg class="icon iconrate">
+              <use xlink:href="/images/how.svg#rate"></use>
+            </svg> -->
+            <img style="height:120px; width: 155px;" src="perfecttutor.png">
+            <h3 style="margin-top: 45px;">Select your perfect tutor</h3>
+            <p>Select your perfect tutor and hire according to your preference</p>
+          </div>
+        </div>
+      </div>
+    </section>

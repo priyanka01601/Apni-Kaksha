@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Add styles to the form container */
+.container {
+  position:absolute;
+  margin: 20px;
+  margin-top: 20px;
+  margin-bottom:40px;
+  max-width: 480px;
+  max-height: 900px;
+  padding: 16px;
+  background-color: #2d2d2d;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=date] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+#branch , #course, #year{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #359fb0;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  font-size: 20px;
+  margin-left: 110px;
+}
+
+.btn:hover {
+/*  opacity: 1;*/
+   background: #2b3532;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);
+}
+.bg{
+  height:auto;
+  width: 100%;
+  /*min-height:100%;
+  min-width:1024px;*/
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  opacity:65%;
+  /*background-position: right;*/
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-repeat: no-repeat;
+  position:fixed;
+
+}
+label{
+  color: white;
+}
+span.psw {
+  float: right;
+  padding-top: 0px;
+  padding-bottom: 25px;
+}
+h1.signup{
+  text-align: center;
+  color: white;
+}
+p.login{
+  text-align: center;
+   color: white;
+}
+a{
+  color: #88b5b9;
+}
+.name{overflow: hidden;}
+.name .fname,
+.name .lname{width: 45%;}
+.name .fname{float: left;}
+.name .lname{float: right;}
+.name label{display: block;}
+
+
+</style>
+</head>
+<body>
+  <div class="backgro">
+      <div class="bg">
+        <img src="C:\Users\Asus\Downloads\WhatsApp Image 2020-12-01 at 10.45.17 PM.jpeg"> 
+      </div>
+
+  <form action="/action_page.php" class="container" >
+    <h1 class="signup">Sign Up</h1>
+
+    <label for="register" style="margin-left: 75px"><b>Register as a </b></label>
+    <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Student</label>
+    <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Tutor</label>
+
+    <br><br>
+  <div class="name">
+      <div class="fname">
+          <label for="fname" >First Name</label>
+          <input type="text" placeholder="Enter First Name" name="fname" required>
+      </div>
+    
+      <div class="lname">
+          <label for="lname">Last Name</label>
+          <input type="text" placeholder="Enter Last Name" name="lname" required>
+      </div>
+  </div>
+
+    <label for="dob">Date Of Birth</label>
+    <br>
+    <input type="date" name="psw" required>
+
+    <br>
+    <label for="gender">Gender</label>
+    <input style="margin-top: 10px;" type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+  
+  <br><br>
+  <div class="name">
+    <div class="fname">
+    <label for="branch">Course</label>
+      <select name="course" required="true" class="validate" id="course">
+          <option value="" disabled selected>Select Course</option>
+          <option value="BE">BE</option>  
+          <option value="BTech">BTech</option>  
+          <option value="MBA">MBA</option>
+          <option value="MCA">MCA</option>  
+          <option value="MSc">MSc</option>
+          <option value="MTech">MTech</option>  
+          <option value="PhD">PhD</option>  
+      </select>
+    </div>
+
+    <div class="lname">
+    <label for="year">Current Year</label>
+    <select name="year" id="year" class="validate" >
+        <option value="" disabled selected>Choose your option</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    </div>
+  </div>
+
+    <label for="branch">Branch</label><br>
+      <select name="branch" id="branch" class="validate" required="true">
+        <option value="choose" selected disabled>Choose your option</option>
+        <option value="Computer Engineering (COE)">Computer Engineering (COE)</option>
+        <option value="Computer Engineering (COBS)">Computer Engineering (COBS)</option>
+        <option value="Computer Engineering (COPC)">Computer Engineering (COPC)</option>
+        <option value="Computer (Information Security)">Computer (Information Security)</option>
+        <option value="Chemical Engineering (CHE)">Chemical Engineering (CHE)</option>
+        <option value="Civil Engineering (CIE)">Civil Engineering (CIE)</option>
+        <option value="Civil (Structural) Engineering">Civil (Structural) Engineering</option>
+        <option value="Electrical Engineering (ELE)">Electrical Engineering (ELE)</option>
+        <option value="Electrical (Power Systems)">Electrical (Power Systems)</option>
+        <option value="Electronics and Computer Engineering (ENC)">Electronics and Computer Engineering (ENC)</option>
+        <option value="Electronics and Communication Engineering (ECE)">Electronics and Communication Engineering (ECE)</option>
+        <option value="Electronics (Instrumentation and Control) Engineering (EIC)">Electronics (Instrumentation and Control) Engineering (EIC)</option>
+        <option value="Electronics (VLSI)">Electronics (VLSI)</option>
+        <option value="Mechanical Engineering (MEE)">Mechanical Engineering (MEE)</option>
+        <option value="Mechanical (Production) Engineering (MPE)">Mechanical (Production) Engineering (MPE)</option>
+        <option value="Mechanical (Thermal) Engineering">Mechanical (Thermal) Engineering</option>
+        <option value="Mechanical (CAD/CAM) Engineering">Mechanical (CAD/CAM) Engineering</option>
+        <option value="Mechatronics (MEC)">Mechatronics (MEC)</option>
+        <option value="Biotechnology">Biotechnology</option>
+        <option value="Biochemistry">Biochemistry</option>
+        <option value="Physics">Physics</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Maths">Maths</option>
+        <option value="Nuclear Physics">Nuclear Physics</option>
+        <option value="Energy and Environment Engineering">Energy and Environment Engineering</option>
+        <option value="Psychology">Psychology</option>
+      </select>
+     <br>
+    <label for="email">Email Address</label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <div class="name">
+      <div class="fname">
+        <label for="psw">Password</label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+
+      <div class="lname">
+        <label for="psw">Confirm Password</label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+    </div>
+    <br>
+    <button type="submit" class="btn">Sign Up</button>
+    <br>
+    <p class="login">
+      Already have an account?
+      <a href="loginpage.html">
+        <i>Login<i>
+      </a>
+    </p>
+  </form>
+  </div>
+
+
+
+</body>
+</html>
